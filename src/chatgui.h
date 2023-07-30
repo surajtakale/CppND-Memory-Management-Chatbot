@@ -28,7 +28,7 @@ public:
     ~ChatBotPanelDialog();
 
     // getter / setter
-    ChatLogic *GetChatLogicHandle() { return _chatLogic; }
+    ChatLogic *GetChatLogicHandle();// { return _chatLogic; }
 
     // events
     void paintEvent(wxPaintEvent &evt);
