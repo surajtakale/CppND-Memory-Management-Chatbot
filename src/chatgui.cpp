@@ -220,5 +220,5 @@ ChatLogic* ChatBotPanelDialog::GetChatLogicHandle() {
          {
             return nullptr; 
         }
-         return return _chatLogic.get();
+         return _chatLogic.get();
     }
