@@ -7,7 +7,7 @@
 #include "graphnode.h"
 #include "graphedge.h"
 #include "chatbot.h"
-
+#include "memory"
 // constructor WITHOUT memory allocation
 ChatBot::ChatBot()
 {
