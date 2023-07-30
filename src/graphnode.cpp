@@ -46,7 +46,7 @@ void GraphNode::MoveChatbotHere(ChatBot chatbot)
 
 void GraphNode::MoveChatbotToNewNode(GraphNode *newNode)
 {
-    (*newNode)MoveChatbotHere(std::move(_chatBot));
+    (*newNode).MoveChatbotHere(std::move(_chatBot));
     // REMOVDE
     //_chatBot = nullptr;
 }
