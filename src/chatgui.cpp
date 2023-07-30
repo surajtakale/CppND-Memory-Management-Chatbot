@@ -215,7 +215,7 @@ ChatBotPanelDialogItem::ChatBotPanelDialogItem(wxPanel *parent, wxString text, b
     // set background color
     this->SetBackgroundColour((isFromUser == true ? wxT("YELLOW") : wxT("BLUE")));
 }
-ChatLogic* GetChatLogicHandle() { 
+ChatLogic* ChatBotFrameImagePanel::GetChatLogicHandle() { 
          if(_chatLogic == nullptr) 
          {
             return nullptr; 
