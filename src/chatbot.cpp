@@ -46,7 +46,7 @@ ChatBot::~ChatBot()
 ////
 ChatBot::ChatBot(const ChatBot &source)
 {
-    std::cout << "Inside Copy Constructor Of ChatBot.\n"
+    std::cout << "Inside Copy Constructor Of ChatBot.\n";
     
     _chatLogic = source._chatLogic;
     _rootNode = source._rootNode;
@@ -59,7 +59,7 @@ ChatBot::ChatBot(const ChatBot &source)
 
 ChatBot &ChatBot::operator=(const ChatBot &source)
 {
-    std::cout << "Inside Copy Assignment Operator Overloading Of ChatBot.\n"
+    std::cout << "Inside Copy Assignment Operator Overloading Of ChatBot.\n";
     if (this == &source)
     {
         return *this;
@@ -75,7 +75,7 @@ ChatBot &ChatBot::operator=(const ChatBot &source)
 
 ChatBot::ChatBot(ChatBot &&source)
 {
-    std::cout << "Inside Move constructor of ChatBot\n"
+    std::cout << "Inside Move constructor of ChatBot\n";
     _chatLogic = source._chatLogic;
     (*_chatLogic).SetChatbotHandle(this);
     _rootNode = source._rootNode;
@@ -91,7 +91,7 @@ ChatBot::ChatBot(ChatBot &&source)
 
 ChatBot &ChatBot::operator=(ChatBot &&source)
 {
-    std::cout << "inside Move Assignment Operator of ChatBot.\n"
+    std::cout << "inside Move Assignment Operator of ChatBot.\n";
     if (this == &source)
     {
         return *this;
