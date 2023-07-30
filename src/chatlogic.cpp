@@ -10,6 +10,7 @@
 #include "graphnode.h"
 #include "chatbot.h"
 #include "chatlogic.h"
+#include "memory"
 
 
 ChatLogic::ChatLogic()
